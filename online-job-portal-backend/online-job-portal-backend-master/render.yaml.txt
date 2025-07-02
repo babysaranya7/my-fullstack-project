@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: online-job-portal-backend
+    runtime: java
+    repo: https://github.com/babysaranya7/my-fullstack-project
+    branch: main
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/online-job-portal-0.0.1-SNAPSHOT.jar"
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
